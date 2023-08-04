@@ -1,0 +1,99 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+\usepackage{listings}
+\usepackage{gvv}
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+
+\vspace{3cm}
+
+\textbf{Question 1.5.2}
+\begin{flushleft}
+Find the intersection $\vec{I}$ of the angle bisectors of $B$ and $C$
+\end{flushleft}
+
+\begin{flushleft}
+\textbf{Solution}\\
+From (1.5.1) the bisectors of $B$ and $C$ are obtained as 
+\begin{align}
+\myvec{
+\frac{11}{\sqrt{122}}+\frac{7}{\sqrt{74}} & \frac{1}{\sqrt{122}}+\frac{5}{\sqrt{74}}\\
+}
+\myvec{
+x\\
+y\\
+}
+=\frac{2}{\sqrt{74}}-\frac{38}{\sqrt{122}}
+\end{align}
+
+and 
+\begin{align}
+\myvec{
+\frac{11}{\sqrt{122}}+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{122}}-\frac{1}{\sqrt{2}}\\
+}
+\myvec{
+x\\
+y\\
+}
+=\frac{2}{\sqrt{2}}-\frac{38}{\sqrt{122}}
+\end{align}
+respectively.\\
+The pair of linear equations can be written in the form 
+\begin{align}
+AX &=B\\
+X&=A^{-1}B
+\end{align}
+Here,
+\begin{align}
+A&=\begin{bmatrix}
+\frac{11}{\sqrt{122}}+\frac{7}{\sqrt{74}} & \frac{1}{\sqrt{122}}+\frac{5}{\sqrt{74}}\\
+\frac{11}{\sqrt{122}}+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{122}}-\frac{1}{\sqrt{2}}\\
+\end{bmatrix}\\
+B&=\begin{bmatrix}
+\frac{2}{\sqrt{74}}-\frac{38}{\sqrt{122}}\\
+\frac{2}{\sqrt{2}}-\frac{38}{\sqrt{122}}\\
+\end{bmatrix}
+\end{align}
+
+We obtain $A^{-1}$ as
+$$
+\frac{1}{(\frac{6}{\sqrt{61}}+\frac{24}{\sqrt{37}\sqrt{61}}+\frac{6}{\sqrt{37}})}
+\begin{bmatrix}
+\frac{1}{\sqrt{2}}-\frac{1}{\sqrt{122}} & \frac{1}{\sqrt{122}}+\frac{5}{\sqrt{74}}\\
+\frac{11}{\sqrt{122}}+\frac{1}{\sqrt{2}} & \frac{-11}{\sqrt{122}}-\frac{7}{\sqrt{74}}
+\end{bmatrix}
+$$
+and $A^{-1}B$ as
+$$
+\frac{1}{(\frac{6}{\sqrt{61}}+\frac{24}{\sqrt{37}\sqrt{61}}+\frac{6}{\sqrt{37}})}
+\begin{bmatrix}
+\frac{6}{\sqrt{37}}-\frac{96}{\sqrt{37}\sqrt{61}}-\frac{18}{\sqrt{61}}\\
+-\frac{30}{\sqrt{61}}+\frac{144}{\sqrt{37}\sqrt{61}}-\frac{6}{\sqrt{37}}\\
+\end{bmatrix}
+$$
+on simplification we otain
+\begin{align}
+\vec{I}=\frac{1}{\sqrt{37}+4+\sqrt{61}}
+\myvec{
+\sqrt{61}-16-3\sqrt{37}\\
+-\sqrt{61}+24-5\sqrt{37}\\
+}
+\end{align}
+
+\end{flushleft}
+
+\end{document}
