@@ -237,39 +237,35 @@ the probabilities that a particular surgery will be rated
 	\item routine or simple
 \end{enumerate}
 \solution
-\begin{table}[H]
+\begin{table}[h]
         \centering
         \input{tables/tab.tex}
+        \caption{Random variable declaration.}
+        \label{tab:exemplar/11/16/3/8}
     \end{table}
 \begin{enumerate}
 \item complex or very complex
 \begin{align}
-&=\pr{E_1+E_2}\\
-&=\pr{E_1}+\pr{E_2}-\pr{E_1E_2}\\
-&=0.15+0.20-0\\
+&=p_X\brak{1}+p_X\brak{2}\\
+&=0.15+0.20\\
 &=0.35
 \end{align}
 \item neither very complex nor very simple 
 \begin{align}
-&=\pr{E_1^\prime E_5^\prime}\\
-&=\pr{E_1+E_5}^\prime\\
-&=1-\pr{E_1+E_5}\\
-&=1-\pr{E_1}-\pr{E_5}\\
-&=1-0.15-0.08\\
+&=1-\brak{p_X\brak{1}+p_X\brak{5}}\\
+&=1-\brak{0.15+0.08}\\
 &=0.77
 \end{align}
 \item routine or complex
 \begin{align}
-&=\pr{E_2+E_3}\\
-&=\pr{E_2}+\pr{E_3}-\pr{E_2E_3}\\
-&=0.20+0.31-0\\
+&=p_X\brak{2}+p_X\brak{3}\\
+&=0.20+0.31\\
 &=0.51
 \end{align}
 \item routine or simple
 \begin{align}
-&=\pr{E_3+E_4}\\
-&=\pr{E_3}+\pr{E_4}-\pr{E_3E_4}\\
-&=0.31+0.26-0\\
+&=p_X\brak{3}+p_X\brak{4}\\
+&=0.31+0.26\\
 &=0.57
 \end{align}
 \end{enumerate}
