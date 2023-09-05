@@ -236,23 +236,20 @@ the probability that either A or B fails is
         \caption{Random variable description}
         \label{tab:exemplar/11/16/3/27}
     \end{table}
-Since $X$ and $Y$ are independent 
+Given,
 \begin{align}
-p_{XY}\brak{k,m}&=p_X\brak{k}p_Y\brak{m}\\
-	 &=
-	\begin{cases}
-		0.06 & k=1,m=1\\ 
-		0.14 & k=1,m=0\\
-		0.24 & k=0,m=1\\
-		0.56 & k=0,m=0
-	\end{cases}
+\pr{A}=0.2\\
+\pr{B}=0.3\\
+\end{align} 
+\begin{align}
+\pr{A+B}&= \pr{A}+\pr{B}-\pr{AB}\\
+&=0.2+0.3-\pr{AB}\\
+&=0.5-\pr{AB}
 \end{align}
-The desired probability is 
+By the first axiom of Probability 
 \begin{align}
-&= p_{XY}\brak{11}+ p_{XY}\brak{10}+ p_{XY}\brak{01}\\
-&=1-p_{XY}\brak{00}\\
-&=1-0.56\\
-&=0.44\\
-&\le 0.5
+0 &\le \pr{AB}\\
+0.5-\pr{AB} &\le 0.5\\
+\pr{A+B} &\le 0.5
 \end{align}
 \end{document}

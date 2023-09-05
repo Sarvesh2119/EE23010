@@ -127,11 +127,8 @@
 	53pt+%
 	53pt+%
 	53pt+%
-	53pt+%
-	53pt+%
-	53pt+%
 0pt}
-\def\gumericNumCols{7}
+\def\gumericNumCols{4}
 \setlength\gnumericTableWidthComplete{\gnumericTableWidth+%
          \tabcolsep*\gumericNumCols*2+\arrayrulewidth*\gumericNumCols}
 \ifthenelse{\lengthtest{\gnumericTableWidthComplete > \linewidth}}%
@@ -153,18 +150,12 @@
 \ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColD}}{\newlength{\gnumericColD}}{}\settowidth{\gnumericColD}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColE}}{\newlength{\gnumericColE}}{}\settowidth{\gnumericColE}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColF}}{\newlength{\gnumericColF}}{}\settowidth{\gnumericColF}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColG}}{\newlength{\gnumericColG}}{}\settowidth{\gnumericColG}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 
 \begin{tabular}[c]{%
 	b{\gnumericColA}%
 	b{\gnumericColB}%
 	b{\gnumericColC}%
 	b{\gnumericColD}%
-	b{\gnumericColE}%
-	b{\gnumericColF}%
-	b{\gnumericColG}%
 	}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -175,120 +166,63 @@
 %%  the first, last or every page. Use \multicolumn if you want.    %%
 
 %%  Header for the first page.                                      %%
-%	\multicolumn{7}{c}{The First Header} \\ \hline 
+%	\multicolumn{4}{c}{The First Header} \\ \hline 
 %	\multicolumn{1}{c}{colTag}	%Column 1
 %	&\multicolumn{1}{c}{colTag}	%Column 2
 %	&\multicolumn{1}{c}{colTag}	%Column 3
-%	&\multicolumn{1}{c}{colTag}	%Column 4
-%	&\multicolumn{1}{c}{colTag}	%Column 5
-%	&\multicolumn{1}{c}{colTag}	%Column 6
 %	&\multicolumn{1}{c}{colTag}	\\ \hline %Last column
 %	\endfirsthead
 
 %%  The running header definition.                                  %%
 %	\hline
-%	\multicolumn{7}{l}{\ldots\small\slshape continued} \\ \hline
+%	\multicolumn{4}{l}{\ldots\small\slshape continued} \\ \hline
 %	\multicolumn{1}{c}{colTag}	%Column 1
 %	&\multicolumn{1}{c}{colTag}	%Column 2
 %	&\multicolumn{1}{c}{colTag}	%Column 3
-%	&\multicolumn{1}{c}{colTag}	%Column 4
-%	&\multicolumn{1}{c}{colTag}	%Column 5
-%	&\multicolumn{1}{c}{colTag}	%Column 6
 %	&\multicolumn{1}{c}{colTag}	\\ \hline %Last column
 %	\endhead
 
 %%  The running footer definition.                                  %%
 %	\hline
-%	\multicolumn{7}{r}{\small\slshape continued\ldots} \\
+%	\multicolumn{4}{r}{\small\slshape continued\ldots} \\
 %	\endfoot
 
 %%  The ending footer definition.                                   %%
-%	\multicolumn{7}{c}{That's all folks} \\ \hline 
+%	\multicolumn{4}{c}{That's all folks} \\ \hline 
 %	\endlastfoot
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\hhline{|--|--|---}
+\hhline{|--|--}
 	 \multicolumn{2}{|p{	\gnumericColA+%
 	\gnumericColB+%
 	\tabcolsep*2*1}|}%
-	{\gnumericPB{\centering}\gnumbox{parameters}}
+	{\gnumericPB{\centering}\gnumbox{Event}}
 	&\multicolumn{2}{p{	\gnumericColC+%
 	\gnumericColD+%
 	\tabcolsep*2*1}|}%
-	{\gnumericPB{\centering}\gnumbox{values}}
-	&\multicolumn{3}{p{	\gnumericColE+%
-	\gnumericColF+%
-	\gnumericColG+%
-	\tabcolsep*2*2}|}%
-	{\gnumericPB{\centering}\gnumbox{decription}}
+	{\gnumericPB{\centering}\gnumbox{Description}}
 \\
-\hhline{|-------|}
-	 \multicolumn{2}{|c|}%
-	{\setlength{\gnumericMultiRowLength}{0pt}%
-	 \addtolength{\gnumericMultiRowLength}{\gnumericColA}%
-	 \addtolength{\gnumericMultiRowLength}{\gnumericColB}%
-	 \addtolength{\gnumericMultiRowLength}{\tabcolsep}%
-	 \multirow{2}[1]{\gnumericMultiRowLength}{\parbox{\gnumericMultiRowLength}{%
-	 \gnumericPB{\centering}\gnumbox{$X$}}}}
+\hhline{|----|}
+	 \multicolumn{2}{|p{	\gnumericColA+%
+	\gnumericColB+%
+	\tabcolsep*2*1}|}%
+	{\gnumericPB{\centering}\gnumbox{$A$}}
 	&\multicolumn{2}{p{	\gnumericColC+%
 	\gnumericColD+%
 	\tabcolsep*2*1}|}%
-	{\gnumericPB{\centering}\gnumbox{1}}
-	&\multicolumn{3}{p{	\gnumericColE+%
-	\gnumericColF+%
-	\gnumericColG+%
-	\tabcolsep*2*2}|}%
 	{\gnumericPB{\centering}\gnumbox{A fails}}
 \\
-\hhline{~~|-----|}
-	 \multicolumn{1}{|p{\gnumericColA}}%
-	{}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{}
+\hhline{|----|}
+	 \multicolumn{2}{|p{	\gnumericColA+%
+	\gnumericColB+%
+	\tabcolsep*2*1}|}%
+	{\gnumericPB{\centering}\gnumbox{$B$}}
 	&\multicolumn{2}{p{	\gnumericColC+%
 	\gnumericColD+%
 	\tabcolsep*2*1}|}%
-	{\gnumericPB{\centering}\gnumbox{0}}
-	&\multicolumn{3}{p{	\gnumericColE+%
-	\gnumericColF+%
-	\gnumericColG+%
-	\tabcolsep*2*2}|}%
-	{\gnumericPB{\centering}\gnumbox{A doesn't fail}}
-\\
-\hhline{|-------|}
-	 \multicolumn{2}{|c|}%
-	{\setlength{\gnumericMultiRowLength}{0pt}%
-	 \addtolength{\gnumericMultiRowLength}{\gnumericColA}%
-	 \addtolength{\gnumericMultiRowLength}{\gnumericColB}%
-	 \addtolength{\gnumericMultiRowLength}{\tabcolsep}%
-	 \multirow{2}[1]{\gnumericMultiRowLength}{\parbox{\gnumericMultiRowLength}{%
-	 \gnumericPB{\centering}\gnumbox{$Y$}}}}
-	&\multicolumn{2}{p{	\gnumericColC+%
-	\gnumericColD+%
-	\tabcolsep*2*1}|}%
-	{\gnumericPB{\centering}\gnumbox{1}}
-	&\multicolumn{3}{p{	\gnumericColE+%
-	\gnumericColF+%
-	\gnumericColG+%
-	\tabcolsep*2*2}|}%
 	{\gnumericPB{\centering}\gnumbox{B fails}}
 \\
-\hhline{~~|-----|}
-	 \multicolumn{1}{|p{\gnumericColA}}%
-	{}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{}
-	&\multicolumn{2}{p{	\gnumericColC+%
-	\gnumericColD+%
-	\tabcolsep*2*1}|}%
-	{\gnumericPB{\centering}\gnumbox{0}}
-	&\multicolumn{3}{p{	\gnumericColE+%
-	\gnumericColF+%
-	\gnumericColG+%
-	\tabcolsep*2*2}|}%
-	{\gnumericPB{\centering}\gnumbox{B doesn't fail}}
-\\
-\hhline{|--|--|---|}
+\hhline{|--|--|}
 \end{tabular}
 
 \ifthenelse{\isundefined{\languageshorthands}}{}{\languageshorthands{\languagename}}
