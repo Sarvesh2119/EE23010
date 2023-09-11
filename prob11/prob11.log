@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.17)  11 SEP 2023 23:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.17)  11 SEP 2023 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1395,14 +1395,17 @@ File: utxsyc.fd 2000/12/15 v3.1
 \gnumericColG=\skip84
 )
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./prob11.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `prob11.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 44530 strings out of 478287
- 1026988 string characters out of 5849289
+ 44531 strings out of 478287
+ 1027013 string characters out of 5849289
  1521331 words of memory out of 5000000
- 62008 multiletter control sequences out of 15000+600000
+ 62009 multiletter control sequences out of 15000+600000
  546784 words of font info for 198 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  100i,15n,104p,410b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
