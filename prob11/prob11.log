@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.17)  17 SEP 2023 02:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.17)  17 SEP 2023 02:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1388,7 +1388,7 @@ Package rerunfilecheck Info: File `prob11.out' has not changed.
 Here is how much of TeX's memory you used:
  44478 strings out of 478287
  1026404 string characters out of 5849289
- 1513725 words of memory out of 5000000
+ 1514725 words of memory out of 5000000
  61961 multiletter control sequences out of 15000+600000
  542243 words of font info for 191 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1400,7 +1400,7 @@ e/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on prob11.pdf (1 page, 43572 bytes).
+Output written on prob11.pdf (1 page, 43579 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
