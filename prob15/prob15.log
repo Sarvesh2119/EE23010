@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.17)  23 SEP 2023 23:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.17)  27 SEP 2023 01:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1352,54 +1352,78 @@ LaTeX Info: Redefining \nameref on input line 103.
 \c@lemma=\count360
 \c@example=\count361
 \c@rem=\count362
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 151.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 15
-1.
+ (./tables/tab1.tex
+\gnumericTableWidth=\skip75
+\gnumericTableWidthComplete=\skip76
+\gnumericMultiRowLength=\skip77
+\gnumericColA=\skip78
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-51.
+48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
-51.
+48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
-51.
+48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-51.
+48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<figs/figure.png, id=72, 722.7pt x 433.62pt>
+)
+\gnumericColB=\skip79
+\gnumericColC=\skip80
+LaTeX Font Info:    Trying to load font information for OMS+txr on input line 2
+02.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
+File: omstxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <9> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 202.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 144--154
+
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 157.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./tables/tab2.tex
+\gnumericColD=\skip81
+)
+<figs/figure.png, id=66, 462.528pt x 346.896pt>
 File: figs/figure.png Graphic file (type png)
 <use figs/figure.png>
-Package pdftex.def Info: figs/figure.png  used on input line 263.
-(pdftex.def)             Requested size: 516.0pt x 309.59926pt.
- [3 <./figs/figure.png>] (./prob15.aux)
+Package pdftex.def Info: figs/figure.png  used on input line 271.
+(pdftex.def)             Requested size: 516.0pt x 387.0176pt.
+
+[3] [4 <./figs/figure.png>] (./prob15.aux)
 Package rerunfilecheck Info: File `prob15.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 44528 strings out of 478287
- 1026837 string characters out of 5849289
- 1524273 words of memory out of 5000000
- 61954 multiletter control sequences out of 15000+600000
- 536607 words of font info for 162 fonts, out of 8000000 for 9000
+ 44623 strings out of 478287
+ 1028243 string characters out of 5849289
+ 1530403 words of memory out of 5000000
+ 62037 multiletter control sequences out of 15000+600000
+ 549416 words of font info for 202 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 100i,12n,104p,410b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,13n,104p,410b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1407,10 +1431,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on prob15.pdf (3 pages, 87870 bytes).
+Output written on prob15.pdf (4 pages, 80497 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
+ 135 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  60 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -146,14 +146,14 @@ From a lot of 30 bulbs which include 6 defectives, a sample of 4 bulbs is drawn 
 random with replacement. Find the probability distribution of the number of defective
 bulbs.\\
 \solution\\
+\begin{table}[H]
+	\centering
+	\input{tables/tab1.tex}
+	\caption{Parameter description}
+	\label{tab:gauss/9.3.18/1}
+\end{table}
 \textbf{Binomial}\\
-Let X be a binomial random variable representing the number of defective bulbs in a sample of 4 bublbs with the parameters n and p as,
-\begin{align}
-	n&=4\\
-	p&=\frac{6}{30}\\
-	&=0.2
-\end{align}
-PMF of the distribution is,
+The PMF of the distribution is,
 \begin{align}
 	p_X\brak{k}&=\comb{n}{k}p^k\brak{1-p}^{n-k}
 \end{align}
@@ -190,37 +190,35 @@ PMF of the distribution is,
 \end{align}
 \end{enumerate}
 \textbf{Gaussian}\\
-Mean and varience of X are
+let $Y$ be a gaussian Random variable
 \begin{align}
-	\mu_X&=np\\
-	&=0.8\\
-	\sigma^2_X&=np\brak{1-p}\\
-	&=0.16
+	Y &\sim N\brak{np,npq}\\
+	&\sim N\brak{0.8,0.64}
 \end{align}
-Let,Z be a rondom variable with mean $\mu_Z = 0$ and $\sigma_Z=1$, such that,
+Due to continuity correction \pr{X=x} can be approximated using gaussian distribution as
 \begin{align}
-	Z&=\frac{X- \mu_X}{\sigma_X}
+	\pr{X=x}&\approx\pr{x-0.5<Y<x+0.5}\\
+	&\approx\pr{Y<x+0.5}-\pr{Y<x-0.5}	\\
+	&\approx F_Y\brak{x+0.5}-F_Y\brak{x-0.5}
 \end{align}
-Z converges to normal distribution for large value of n
+CDF of Y is defined as:
 \begin{align}
-	f\brak{x}&=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}
+	F_Y\brak{x}&=\pr{Y<x}\\
+	&=\pr{\frac{Y-\mu}{\sigma}<\frac{x-\mu}{\sigma}}\\
+	\implies \frac{Y-\mu}{\sigma} &\sim N\brak{0,1}\\
+	&=1-\pr{\frac{Y-\mu}{\sigma}>\frac{x-\mu}{\sigma}}\\
+	&=1-\qfunc{\frac{x-\mu}{\sigma}}
 \end{align}
-And the Q funtion is 
+Then PDF in terms of Q funtion is
 \begin{align}
-	\qfunc{x}&=\pr{Z >x}
-\end{align}
-Then 
-\begin{align}
-\pr{Z=\frac{X-\mu_X}{\sigma_X}} &\approx \pr{\frac{X+0.5-\mu_X}{\sigma_X} < Z < \frac{X-0.5-\mu_X}{\sigma_X}}\\
-	&\approx \pr{Z<\frac{X+0.5-\mu_X}{\sigma_X}} - \pr{Z<\frac{X-0.5-\mu_X}{\sigma_X}}\\
-	&\approx \pr{Z>\frac{X-0.5-\mu_X}{\sigma_X}} - \pr{Z>\frac{X+0.5-\mu_X}{\sigma_X}}\\
-	&\approx \qfunc{\frac{X-0.5-\mu_X}{\sigma_X}} - \qfunc{\frac{X+0.5-\mu_X}{\sigma_X}}
+	\implies \pr{X=x}&\approx \qfunc{\frac{\brak{x-0.5}-\mu}{\sigma}}-\qfunc{\frac{\brak{x+0.5}-\mu}{\sigma}}
 \end{align}
 \begin{enumerate}
 	\item 
 	\begin{align}
 		X&=0
 	\end{align}
+	The Gaussian approximation for \pr{X=0} is
 	\begin{align}
 	&\approx \qfunc{-8.125} - \qfunc{-1.875}\\
 	&\approx 0.3017
@@ -229,6 +227,7 @@ Then
 	\begin{align}
 		X&=1
 	\end{align}
+	The Gaussian approximation for \pr{X=1} is
 	\begin{align}
 	&\approx \qfunc{-1.875} - \qfunc{4.375}\\
 	&\approx 0.4555
@@ -237,6 +236,7 @@ Then
 	\begin{align}
 		X&=2
 	\end{align}
+	The Gaussian approximation for \pr{X=2} is
 	\begin{align}
 	&\approx \qfunc{4.375} - \qfunc{10.625}\\
 	&\approx 0.1739
@@ -245,6 +245,7 @@ Then
 	\begin{align}
 		X&=3
 	\end{align}
+	The Gaussian approximation for \pr{X=3} is
 	\begin{align}
 	&\approx \qfunc{10.625} - \qfunc{16.875}\\
 	&\approx 0.0164
@@ -253,11 +254,18 @@ Then
 	\begin{align}
 		X&=4
 	\end{align}
+	The Gaussian approximation for \pr{X=4} is
 	\begin{align}
 	&\approx \qfunc{16.875} - \qfunc{23.125}\\
 	&\approx 0.00036
 	\end{align}
 \end{enumerate}
+\begin{table}[ht!]
+	\centering
+	\input{tables/tab2.tex}
+	\caption{Comparing the gaussian approximation with binomial}
+	\label{tab:tab:gauss/9.3.18/2}
+\end{table}
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=\columnwidth]{figs/figure.png}
