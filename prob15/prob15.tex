@@ -152,44 +152,6 @@ bulbs.\\
 	\caption{Parameter description}
 	\label{tab:gauss/9.3.18/1}
 \end{table}
-\textbf{Binomial}\\
-The PMF of the distribution is,
-\begin{align}
-	p_X\brak{k}&=\comb{n}{k}p^k\brak{1-p}^{n-k}
-\end{align}
-\begin{enumerate}
-	\item
-	\begin{align}
-	k&=0\\
-	\implies p_X\brak{0}&=\comb{4}{0}\brak{0.2}^0\brak{0.8}^4\\
-	&=0.4096
-\end{align}
-	\item
-	\begin{align}
-	k&=1\\
-	\implies p_X\brak{1}&=\comb{4}{1}\brak{0.2}^1\brak{0.8}^3\\
-	&=0.4096
-\end{align}
-	\item
-	\begin{align}
-	k&=2\\
-	\implies p_X\brak{2}&=\comb{4}{2}\brak{0.2}^2\brak{0.8}^2\\
-	&=0.1536
-\end{align}
-\item
-	\begin{align}
-	k&=3\\
-	\implies p_X\brak{3}&=\comb{4}{3}\brak{0.2}^3\brak{0.8}^1\\
-	&=0.0256
-\end{align}
-\item
-	\begin{align}
-	k&=4\\
-	\implies p_X\brak{2}&=\comb{4}{4}\brak{0.2}^4\brak{0.8}^0\\
-	&=0.0016
-\end{align}
-\end{enumerate}
-\textbf{Gaussian}\\
 let $Y$ be a gaussian Random variable
 \begin{align}
 	Y &\sim N\brak{np,npq}\\
@@ -197,7 +159,7 @@ let $Y$ be a gaussian Random variable
 \end{align}
 Due to continuity correction \pr{X=x} can be approximated using gaussian distribution as
 \begin{align}
-	\pr{X=x}&\approx\pr{x-0.5<Y<x+0.5}\\
+	p_Y\brak{x}&\approx\pr{x-0.5<Y<x+0.5}\\
 	&\approx\pr{Y<x+0.5}-\pr{Y<x-0.5}	\\
 	&\approx F_Y\brak{x+0.5}-F_Y\brak{x-0.5}
 \end{align}
@@ -207,11 +169,14 @@ CDF of Y is defined as:
 	&=\pr{\frac{Y-\mu}{\sigma}<\frac{x-\mu}{\sigma}}\\
 	\implies \frac{Y-\mu}{\sigma} &\sim N\brak{0,1}\\
 	&=1-\pr{\frac{Y-\mu}{\sigma}>\frac{x-\mu}{\sigma}}\\
-	&=1-\qfunc{\frac{x-\mu}{\sigma}}
+	&=\begin{cases}
+		1-\qfunc{\frac{x-\mu}{\sigma}} & x \geq \mu\\
+		\qfunc{\frac{\mu -x}{\sigma}} & x < \mu 
+	\end{cases}
 \end{align}
-Then PDF in terms of Q funtion is
+Then probability in terms of Q funtion is
 \begin{align}
-	\implies \pr{X=x}&\approx \qfunc{\frac{\brak{x-0.5}-\mu}{\sigma}}-\qfunc{\frac{\brak{x+0.5}-\mu}{\sigma}}
+	\implies p_Y\brak{x}&\approx \qfunc{\frac{\brak{x-0.5}-\mu}{\sigma}}-\qfunc{\frac{\brak{x+0.5}-\mu}{\sigma}}
 \end{align}
 \begin{enumerate}
 	\item 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.17)  27 SEP 2023 01:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.17)  28 SEP 2023 04:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1402,28 +1402,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--154
 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 157.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./tables/tab2.tex
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 155.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./tables/tab2.tex
 \gnumericColD=\skip81
 )
-<figs/figure.png, id=66, 462.528pt x 346.896pt>
+<figs/figure.png, id=33, 462.528pt x 346.896pt>
 File: figs/figure.png Graphic file (type png)
 <use figs/figure.png>
-Package pdftex.def Info: figs/figure.png  used on input line 271.
+Package pdftex.def Info: figs/figure.png  used on input line 236.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 
-[3] [4 <./figs/figure.png>] (./prob15.aux)
+[2] [3 <./figs/figure.png>] (./prob15.aux)
 Package rerunfilecheck Info: File `prob15.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 44623 strings out of 478287
- 1028243 string characters out of 5849289
- 1530403 words of memory out of 5000000
+ 44599 strings out of 478287
+ 1027987 string characters out of 5849289
+ 1532403 words of memory out of 5000000
  62037 multiletter control sequences out of 15000+600000
- 549416 words of font info for 202 fonts, out of 8000000 for 9000
+ 548100 words of font info for 200 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 100i,13n,104p,410b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,15n,104p,410b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1431,10 +1431,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on prob15.pdf (4 pages, 80497 bytes).
+Output written on prob15.pdf (3 pages, 78367 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 38 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
