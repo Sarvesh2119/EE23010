@@ -237,21 +237,24 @@ if $E\brak{X|Y=y_0}=\frac{1}{2}$,then $y_0$ equals
 \end{enumerate}
 \solution
 \begin{align}
-E\brak{X|Y=y_0} &= \int_{-\infty}^{\infty}xf\brak{x|y}dx
+E\brak{X|Y} &= \int_{-\infty}^{\infty}xp_{X|Y}dx
 \end{align}
 where
 \begin{align}
-f\brak{x|y}=\frac{f\brak{x,y}}{f\brak{y}}
+p_{X|Y}=\frac{p_{XY}\brak{x,y}}{p_Y\brak{y}}
 \end{align}
 \begin{align}
-f\brak{y}&=\int_{0}^{y}f\brak{x,y}dx\\
+p_Y\brak{y}&=\int_{0}^{y}p_{X|Y}\brak{x,y}dx
+\end{align}
+for $0<y<1$
+\begin{align}
 &=\int_{0}^{y}8xydx\\
 &=8y\sbrak{\frac{x^2}{2}}_{0}^{y}\\
 &=4y^3
 \end{align}
-Substituting f\brak{y} we get 
+Substituting $p_Y\brak{y}$ we get 
 \begin{align}
-f\brak{x|y}&=\frac{8xy}{4y^3}\\
+p_{X|Y}&=\frac{8xy}{4y^3}\\
 &=\frac{2x}{y^2}
 \end{align}
 and 
